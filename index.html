@@ -34,6 +34,36 @@
     padding: 20px;
     border-radius: 8px;
   }
+
+  .profile-card {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #822424;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-email {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #555;
+  font-style: italic;
+  font-weight: 400;
+}
   </style>
         
     </head>
@@ -63,39 +93,28 @@
         </div>
       </nav>
 
+      
       <div class="container" style="margin-top: 80px">
-
         <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-4">
-                
-                <!-- Main Image -->
-                <div class="col-md-12">
-                    <img class="img-responsive" src="img/Mushfiqur.JPG" alt="" style="max-width: 200px; height: auto;">
-
-
-                    <br> 
-                    <b> Mushfiqur Rahman Chowdhury </b> <br>                 
-                    <!-- Office: ERB 345 <br>  -->                   
-                    Email: mushfiqur-chowdhury05@gmail.com <br> 
-                   
-                    </p>
-
-            </div> 
-            
+          <!-- Profile Column -->
+          <div class="col-md-4">
+            <div class="profile-card">
+              <img class="profile-pic" src="img/Mushfiqur.JPG" alt="Mushfiqur Rahman Chowdhury">
+      
+              <div class="profile-name">Mushfiqur Rahman Chowdhury</div>
+              <div class="profile-email">mushfiqur-chowdhury05@gmail.com</div>
+            </div>
+          </div>
+      
+          <!-- Introduction Column -->
+          <div class="col-md-8 intro-text">
+            <p>
+              I am a Software Engineer at Samsung R&D Institute Bangladesh. I hold a B.Sc. in Software Engineering from University of Dhaka graduating with a CGPA of 3.79/4.00.
+              My research focuses on software engineering, software security and testing, and blockchain data mining.
+            </p>
+          </div>
         </div>
-
-        <div class="col-md-12 intro-text">
-          <p>
-            I am a Software Engineer at Samsung R&D Institute Bangladesh. I hold a B.Sc. in Software Engineering from University of Dhaka graduating with a CGPA of 3.79/4.00.
-            My research focuses on software engineering, software security and testing, and blockchain data mining.
-          </p>
-        </div>
-        
-        
-    </div>
-</div>
+      </div>
 
 </body>
 
