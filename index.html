@@ -37,19 +37,20 @@
   }
 
   .profile-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 20px;
-  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-  color: #333;
+  background-color: #fff;
+  padding-bottom: 15px;
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #822424;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;               /* Maintain aspect ratio */
+  display: block;
+  object-fit: cover;          /* Ensures the image covers the frame evenly */
+  border-bottom: 3px solid #eee;
 }
 
 .profile-name {
