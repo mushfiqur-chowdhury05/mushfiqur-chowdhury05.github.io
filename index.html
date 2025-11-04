@@ -42,15 +42,18 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
   background-color: #fff;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
+/* Smaller image but still shows full picture */
 .profile-pic {
-  width: 100%;
-  height: auto;               /* Maintain aspect ratio */
+  width: 80%;                /* adjust this to control size (e.g., 70%, 60%) */
+  height: auto;              /* keeps proportions correct */
   display: block;
-  object-fit: cover;          /* Ensures the image covers the frame evenly */
-  border-bottom: 3px solid #eee;
+  margin: 0 auto 15px auto;  /* centers image horizontally */
+  object-fit: contain;       /* shows full image */
+  border-radius: 12px;       /* optional: rounded edges */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .profile-name {
